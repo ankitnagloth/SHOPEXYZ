@@ -1,0 +1,129 @@
+.section{
+    margin: 10vh 0;
+}
+
+.navbar-brand{
+    font-weight: 700 !important;
+
+}
+
+.section-heading{
+
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.section-heading h1{
+    margin-left: 0px;
+}
+
+.owl-carousel .item img{
+
+    height: 40vh;
+
+
+}
+.banner .banner-head{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+    color: black !important;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner .banner-head h1{
+
+    color: #acacac !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    margin-left: 50px;
+}
+
+.feature-item{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.feature-item .card{
+    width: 40rem;
+    font-size: 1.2rem;
+}
+
+.feature-item img{
+    width: 35vw;
+    height: 65vh;
+    border-radius: 20px;
+}
+
+.cart{
+
+    margin-top: 0;
+}
+
+.cart .cart-header p, h1{
+
+    margin-left: 350px;
+}
+.cart .cart-header{
+    background-image: url(/static/img/arrival-bg.jpg);
+    background-size: cover;
+    height: 75vh;
+    padding-top: 15vh;
+    margin-bottom: 5vh;
+} 
+
+
+.cart .cart-img{
+
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.products img{
+
+    width: 100% !important;
+    height: 40vh !important;
+
+}
+
+.card {
+    position: relative ;
+    
+}
+
+
+.card .card-btns {
+
+    position: absolute;
+    top:33vh;
+    opacity: 0;
+    left: 5vh  ;
+    transform: translateX(50vh);
+    transition: all .5s ease-in;
+}
+
+
+.card:hover .card-btns{
+
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+
+@media (max-width){
+    .cart .cart-header{
+
+        background-size: 150px 90px ;
+    }
+}

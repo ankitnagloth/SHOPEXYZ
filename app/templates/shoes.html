@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="shoes mt-5">
+    <div class="row container p-5">
+        <div class="col-md-4">
+            <div class="list-group">
+
+
+                <p>Brand</p>
+            <a href="{% url 'shoes' 'None' %}" class="list-group-item">All</a>
+
+
+
+            <a href="{% url 'shoes' 'Campus' %}" class="list-group-item">Campus</a>
+
+
+
+            <a href="{% url 'shoes' 'Nike' %}" class="list-group-item">Nike</a>
+
+                <p>Price</p>
+
+            <a href="{% url 'shoes' 'below' %}" class="list-group-item">Below $300</a>
+
+            <a href="{% url 'shoes' 'above' %}" class="list-group-item">Above $300</a>
+            
+                
+                 
+           
+            </div>
+        </div>
+        
+        <div class="col">
+         {% for i in products %}
+            
+        <div class="row my-3 ">
+            <div class="col-md-3">
+                <img src="/media/{{i.image}}" class="img-fluid object-fit-cover my-3" style="width: 10rem;" alt="">
+            </div>
+        <div class="col-md-8">
+            <h3>{{i.product_name}}</h3>
+            <p>{{i.brand}}</p>
+            <p>${{i.discounted_price}} <small class="text-decoration-line-through">{{i.selling_price}}
+            </small></p>
+
+            <a href="" class="btn shadow-lg btn-primary">Add To Cart</a>
+            <a href="" class="btn shadow-lg btn-danger">Buy Now</a>
+        </div>
+
+            </div>
+            
+            
+            {% endfor %}
+        </div>
+ 
+    </div>
+    
+</section>
+{% endblock content %}

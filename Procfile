@@ -1,1 +1,1 @@
-echo "web: gunicorn shopexyz.wsgi" > Procfile
+echo "web: gunicorn ShopeXYZ.wsgi" > Procfile
